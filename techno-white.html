@@ -23,429 +23,103 @@
     <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  
+
 </head>
 
 <body>
-
-    <header class="bg-light shadow static-header w-100 top-0">
-        <div class="container-fluid">
-            <div class="container mx-auto ">
-                <div class="header  font-bold ">
-                    <div class="d-flex align-items-center justify-content-between position-relative">
-                        <div class="logo">
-                            <div class="logo-img zoom-card">
-                                <img src="techno.img/logo.png" width="100%" alt="">
-                            </div>
-                        </div>
-                        <div class="nav d-none d-lg-block ">
-                            <ul class="menu d-flex fw-bold">
-                                <li><a href="#Home">Home</a></li>
-                                <li><a href="#Services">Services</a></li>
-                                <li><a href="#Portfolio">Portfolio</a></li>                                                 
-                                <li><a href="#Testimonials">Testimonials</a></li>
-                                <li><a href="#team">Team</a></li>
-                                <li><a href="#Blogs">Blogs</a></li>
-                                <li><a href="#Contact">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="d-block d-lg-none" id="menu-btn">
-                                <i class="fa-solid fa-bars"></i>
-                            </div>
-                            <div class="btn">
-                                <button class=" text-white  rounded-pill">Get Quote</button>
-                            </div>
-                            <div class="darkmode-btn">
-                                <a href="techno-black.html">
-                                    <button class=" rounded-pill" style="background-color: rgb(224, 224, 224);">
-                                        <i class="fa-solid fa-moon" style="color: #000000;"></i> </button>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div id="mobile-menu" class="position-absolute bg-light w-50 top-90 d-none">
-                            <ul class="menu fw-bold   ">
-                                <li class="pb-2 m-2"><a href="#Home">Home</a></li>
-                                <li class="pb-2 m-2"><a href="#Services">Services</a></li>
-                                <li class="pb-2 m-2"><a href="#Portfolio">Portfolio</a></li>
-                                <li class="pb-2 m-2"><a href="Testimonials">Testimonials</a></li>
-                                <li class="pb-2 m-2"><a href="#team">Team</a></li>
-                                <li class="pb-2 m-2"><a href="Blogs">Blogs</a></li>
-                                <li class="pb-2 m-2"><a href="#Contacts">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="fixed-btn position-fixed   p-3 rounded-circle overflow-hidden" style="z-index: 1030;">
-        <div onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-            class="d-flex justify-content-center align-items-center ">
-            <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
-        </div>
+    <div id="loader">
+        <div id="counter">0%</div>
     </div>
-
-    
-    <div id="Home" class="hero content">
-        <div id="particles-js"></div>
-        <div class="container-fluid	 ">
-            <div class="container mx-auto ">
-                <div class="row d-flex py-200">
-                    <div class="col-md-6 d-none d-md-block w-50 bg-image"></div>
-                    <div class="col-12 col-md-6 text-center text-md-start text">
-                        <h1 data-aos="fade-up" data-aos-duration="1000" class="text-white fs-1 mb-4">Delivering Superior
-                            Services<br><span class="text-primary">IT
-                                Solutions.</span> </h1>
-                        <p data-aos="fade-up" data-aos-duration="1300" class="text-white fs-6 fw-semibold mb-4">You can
-                            easily change any design to your own. It is
-                            also
-                            highly <br> customizable SEO friendly template.</p>
-
-                        <div data-aos="fade-up" data-aos-duration="1600" class="social-icon mb-4 ">
-                            <i class="m-2 fa-brands fa-x-twitter" style="color: #0857be;"></i>
-                            <i class="m-2 fa-brands fa-facebook" style="color: #0857be;"></i>
-                            <i class="m-2 fa-brands fa-linkedin" style="color: #0857be;"></i>
-                            <i class="m-2 fa-brands fa-instagram" style="color: #0857be;"></i>
-                        </div>
-                        <div data-aos="fade-up" data-aos-duration="1500" class="get-btn ">
-                            <div class="btn p-0 position-relative z-3">
-                                <button class=" text-white  p-2 px-4 border-0 rounded-pill">Get Quote</button>
+    <div id="content">
+        <header class="bg-light shadow static-header w-100 top-0">
+            <div class="container-fluid">
+                <div class="container mx-auto ">
+                    <div class="header  font-bold ">
+                        <div class="d-flex align-items-center justify-content-between position-relative">
+                            <div class="logo">
+                                <div class="logo-img zoom-card">
+                                    <img src="techno.img/logo.png" width="100%" alt="">
+                                </div>
                             </div>
-                            <div class="btn">
-                                <button class=" text-white p-2 px-4 border-0 rounded-pill">Get Quote</button>
+                            <div class="nav d-none d-lg-block ">
+                                <ul class="menu d-flex fw-bold">
+                                    <li><a href="#Home">Home</a></li>
+                                    <li><a href="#Services">Services</a></li>
+                                    <li><a href="#Portfolio">Portfolio</a></li>
+                                    <li><a href="#Testimonials">Testimonials</a></li>
+                                    <li><a href="#Blogs">Blogs</a></li>
+                                    <li><a href="#Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="d-block d-lg-none" id="menu-btn">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <div class="btn">
+                                    <button class=" text-white  rounded-pill">Get Quote</button>
+                                </div>
+                                <div class="darkmode-btn">
+                                    <a href="techno-black.html">
+                                        <button class=" rounded-pill" style="background-color: rgb(224, 224, 224);">
+                                            <i class="fa-solid fa-moon" style="color: #000000;"></i> </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div id="mobile-menu" class="position-absolute bg-light w-50 top-90 d-none">
+                                <ul class="menu fw-bold   ">
+                                    <li class="pb-2 m-2"><a href="#Home">Home</a></li>
+                                    <li class="pb-2 m-2"><a href="#Services">Services</a></li>
+                                    <li class="pb-2 m-2"><a href="#Portfolio">Portfolio</a></li>
+                                    <li class="pb-2 m-2"><a href="Testimonials">Testimonials</a></li>
+                                    <li class="pb-2 m-2"><a href="Blogs">Blogs</a></li>
+                                    <li class="pb-2 m-2"><a href="#Contacts">Contacts</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </header>
 
-
-
-    <div id="Services" class="services">
-        <div class="container-fluid">
-            <div class="container mx-auto overflow-hidden">
-                <div class="title-text text-center">
-                    <h1 class="fs-2 ">Services We Offer</h1>
-                    <p class="fs-6 ">Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="row gx-4 p-4">
-                    <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-md-6 col-lg-4 ">
-                        <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card">
-                            <div class="icon mx-auto text-center">
-                                <img src="techno.img/asset 1.svg" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <h1 class="fs-4">Applicationh1 Design</h1>
-                                <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="1200" class="col-12 col-md-6 col-lg-4 ">
-                        <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card">
-                            <div class="icon mx-auto text-center">
-                                <img src="techno.img/asset 2.svg" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <h1 class="fs-4">Web Hosting</h1>
-                                <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="1600" class="col-12 col-md-6 col-lg-4 ">
-                        <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card">
-                            <div class="icon mx-auto text-center">
-                                <img src="techno.img/asset 3.svg" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <h1 class="fs-4">Social Media</h1>
-                                <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-md-6 col-lg-4">
-                        <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card ">
-                            <div class="icon mx-auto text-center">
-                                <img src="techno.img/asset 4.svg" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <h1 class="fs-4">SEO Optimization</h1>
-                                <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="1200" class="col-12 col-md-6 col-lg-4 ">
-                        <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card ">
-                            <div class="icon mx-auto text-center">
-                                <img src="techno.img/asset 5.svg" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <h1 class="fs-4">Cloud srever</h1>
-                                <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="1600" class="col-12 col-md-6 col-lg-4 ">
-                        <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card ">
-                            <div class="icon mx-auto text-center">
-                                <img src="techno.img/asset 6.svg" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <h1 class="fs-4">Data secuity</h1>
-                                <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="fixed-btn position-fixed   p-3 rounded-circle overflow-hidden" style="z-index: 1030;">
+            <div onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+                class="d-flex justify-content-center align-items-center ">
+                <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
             </div>
         </div>
-    </div>
 
 
-    <div class="abc">
-        <div class="container-fluid">
-            <div class="container mx-auto">
-                <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center">
-                    <h1 class="fs-2 ">Why Choose Us</h1>
-                    <p class="fs-6 ">Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="container">
-                    <div class="row justify-content-center">
+        <div id="Home" class="hero content">
+            <div id="particles-js"></div>
+            <div class="container-fluid	 ">
+                <div class="container mx-auto ">
+                    <div class="row d-flex py-200">
+                        <div class="col-md-6 d-none d-md-block w-50 bg-image"></div>
+                        <div class="col-12 col-md-6 text-center text-md-start text">
+                            <h1 data-aos="fade-up" data-aos-duration="1000" class="text-white fs-1 mb-4">Delivering
+                                Superior
+                                Services<br><span class="text-primary">IT
+                                    Solutions.</span> </h1>
+                            <p data-aos="fade-up" data-aos-duration="1300" class="text-white fs-6 fw-semibold mb-4">You
+                                can
+                                easily change any design to your own. It is
+                                also
+                                highly <br> customizable SEO friendly template.</p>
 
-                        <!-- Left Column -->
-                        <div class="col-12 col-md-6 col-lg-4 mb-4">
-                            <div data-aos="fade-up" data-aos-duration="800" class="d-flex mb-4 justify-content-end">
-                                <div class="text text-end">
-                                    <h2 class="fs-3">Experience</h2>
-                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
-                                        <br>labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="icon ms-2 zoom-card ">
-                                    <img src="techno.img/asset 7.svg" width="100%" alt="">
-                                </div>
+                            <div data-aos="fade-up" data-aos-duration="1600" class="social-icon mb-4 ">
+                                <i class="m-2 fa-brands fa-x-twitter" style="color: #0857be;"></i>
+                                <i class="m-2 fa-brands fa-facebook" style="color: #0857be;"></i>
+                                <i class="m-2 fa-brands fa-linkedin" style="color: #0857be;"></i>
+                                <i class="m-2 fa-brands fa-instagram" style="color: #0857be;"></i>
                             </div>
-                            <div data-aos="fade-up" data-aos-duration="1200" class="d-flex mb-4 justify-content-end">
-                                <div class="text text-end ">
-                                    <h2 class="fs-3">Product</h2>
-                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
-                                        <br>labore et dolore magna aliqua.
-                                    </p>
+                            <div data-aos="fade-up" data-aos-duration="1500" class="get-btn ">
+                                <div class="btn p-0 position-relative z-3">
+                                    <button class=" text-white  p-2 px-4 border-0 rounded-pill">Get Quote</button>
                                 </div>
-                                <div class="icon ms-2 zoom-card">
-                                    <img src="techno.img/asset 8.svg" width="100%" alt="">
-                                </div>
-                            </div>
-                            <div data-aos="fade-up" data-aos-duration="1600" class="d-flex mb-4 justify-content-end">
-                                <div class="text text-end">
-                                    <h2 class="fs-3">Approach</h2>
-                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
-                                        <br>labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="icon ms-2 zoom-card">
-                                    <img src="techno.img/asset 9.svg" width="100%" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Center Image Column -->
-                        <div data-aos="fade-up" data-aos-duration="1500" class="col-12 col-md-6 col-lg-4 mb-4 p-5">
-                            <div class="img zoom-card">
-                                <img src="techno.img/asset_10-removebg-preview.png" alt=""
-                                    style="width: 100%; height: 350px;">
-                            </div>
-                        </div>
-
-                        <!-- Right Column -->
-                        <div class="col-12 col-md-6 col-lg-4 mb-4">
-                            <div data-aos="fade-up" data-aos-duration="800" class="d-flex mb-4">
-                                <div class="icon me-2 zoom-card">
-                                    <img src="techno.img/asset 11.svg" width="100%" alt="">
-                                </div>
-                                <div class="text text-start">
-                                    <h2 class="fs-3">Pricing</h2>
-                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
-                                        <br>labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                            <div data-aos="fade-up" data-aos-duration="1200" class="d-flex mb-4">
-                                <div class="icon me-2 zoom-card">
-                                    <img src="techno.img/asset 12.svg" width="100%" alt="">
-                                </div>
-                                <div class="text text-start">
-                                    <h2 class="fs-3">Delivery</h2>
-                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
-                                        <br>labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                            <div data-aos="fade-up" data-aos-duration="1600" class="d-flex mb-4">
-                                <div class="icon me-2 zoom-card">
-                                    <img src="techno.img/asset 13.svg" width="100%" alt="">
-                                </div>
-                                <div class="text text-start">
-                                    <h2 class="fs-3">Support</h2>
-                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut
-                                        <br>labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="Portfolio" class="portfolio">
-        <div class="container-fluid">
-            <div class="container mx-auto">
-                <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center mb-4">
-                    <h1 class="fs-2">Our Portfolio</h1>
-                    <p class="fs-6">Lorem ipsum dolor sit amet</p>
-                </div>
-                <!-- Filter Buttons -->
-                <div data-aos="fade-up" data-aos-duration="1500"
-                    class="button-group mb-4 d-flex flex-wrap justify-content-center gap-2 ">
-                    <button onclick="filterProjects('all')"
-                        class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">All</button>
-                    <button onclick="filterProjects('app-design')"
-                        class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">App Design</button>
-                    <button onclick="filterProjects('app-development')"
-                        class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">App Development</button>
-                    <button onclick="filterProjects('branding')"
-                        class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">Branding</button>
-                    <button onclick="filterProjects('it')" class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">IT
-                        Solution</button>
-                </div>
-                <!-- Gallery -->
-                <div data-aos="fade-up" data-aos-duration="1500" class="gallery-section">
-                    <div class="row gx-4 ">
-                        <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden" data-category="app-design">
-                            <div class="overflow-hidden">
-                                <img class="rounded-3 w-100 zoom-card" src="techno.img/asset 14.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden"
-                            data-category="app-development">
-                            <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
-                                    src="techno.img/asset 15.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden" data-category="branding">
-                            <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
-                                    src="techno.img/asset 16.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden" data-category="it">
-                            <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
-                                    src="techno.img/asset 17.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden" data-category="app-design">
-                            <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
-                                    src="techno.img/asset 18.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden" data-category="branding">
-                            <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
-                                    src="techno.img/asset 19.jpeg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="pricing-plan">
-        <div class="container-fluid">
-            <div class="container mx-auto">
-                <div class="title-text text-center ">
-                    <h1 class="fs-2">Pricing Plans</h1>
-                    <p class="fs-6 ">Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="row gx-4">
-                    <div class="col-12 col-md-6 col-lg-4 zoom-card">
-                        <div class="p-3 shadow  bg-body rounded text-center bg-light ">
-                            <div class="price">
-                                <h3>Basic</h3>
-                                <div class="d-flex justify-content-center">$ <h1>25</h1>
-                                </div>
-                                <div class="price-list fs-6 mb-4">
-                                    <p><i class="fa-regular fa-circle-check"></i>Unlimited GB Space</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>30 Domain Names</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free SSL</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Daily Backup</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free Templates</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free Email</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>10 Databases</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Unlimited Email Address</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Live Support</p>
-                                </div>
-                                <div class="btn ">
-                                    <button class=" text-white p-2 px-4 border-0 rounded-pill">Order Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 zoom-card">
-                        <div class=" shadow p-3  bg-body rounded text-center bg-light ">
-                            <div class="price">
-                                <h3>Basic</h3>
-                                <div class="d-flex justify-content-center">$ <h1>50</h1>
-                                </div>
-                                <div class="price-list fs-6 mb-4">
-                                    <p><i class="fa-regular fa-circle-check"></i>Unlimited GB Space</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>30 Domain Names</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free SSL</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Daily Backup</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free Templates</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free Email</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>10 Databases</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Unlimited Email Address</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Live Support</p>
-                                </div>
-                                <div class="btn ">
-                                    <button class=" text-white p-2 px-4 border-0 rounded-pill">Order Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 zoom-card">
-                        <div class=" shadow p-3 bg-body rounded text-center bg-light ">
-                            <div class="price">
-                                <h3>Basic</h3>
-                                <div class="d-flex justify-content-center">$ <h1>100</h1>
-                                </div>
-                                <div class="price-list fs-6 mb-4">
-                                    <p><i class="fa-regular fa-circle-check"></i>Unlimited GB Space</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>30 Domain Names</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free SSL</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Daily Backup</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free Templates</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Free Email</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>10 Databases</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Unlimited Email Address</p>
-                                    <p><i class="fa-regular fa-circle-check"></i>Live Support</p>
-                                </div>
-                                <div class="btn ">
-                                    <button class=" text-white p-2 px-4 border-0 rounded-pill">Order Now</button>
+                                <div class="btn">
+                                    <button class=" text-white p-2 px-4 border-0 rounded-pill">Get Quote</button>
                                 </div>
                             </div>
                         </div>
@@ -453,186 +127,534 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="Testimonials" class="testimonials">
-        <div class="container-fluid">
-            <div class="container mx-auto">
-                <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center mb-4">
-                    <h1 class="fs-2">Testimonials</h1>
-                    <p class="fs-6">Lorem ipsum dolor sit amet</p>
+
+
+        <div id="Services" class="services">
+            <div class="container-fluid">
+                <div class="container mx-auto overflow-hidden">
+                    <div class="title-text text-center">
+                        <h1 class="fs-2 ">Services We Offer</h1>
+                        <p class="fs-6 ">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="row gx-4 p-4">
+                        <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-md-6 col-lg-4 ">
+                            <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card">
+                                <div class="icon mx-auto text-center">
+                                    <img src="techno.img/asset 1.svg" alt="">
+                                </div>
+                                <div class="text text-center">
+                                    <h1 class="fs-4">Applicationh1 Design</h1>
+                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore
+                                        et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-duration="1200" class="col-12 col-md-6 col-lg-4 ">
+                            <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card">
+                                <div class="icon mx-auto text-center">
+                                    <img src="techno.img/asset 2.svg" alt="">
+                                </div>
+                                <div class="text text-center">
+                                    <h1 class="fs-4">Web Hosting</h1>
+                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore
+                                        et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-duration="1600" class="col-12 col-md-6 col-lg-4 ">
+                            <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card">
+                                <div class="icon mx-auto text-center">
+                                    <img src="techno.img/asset 3.svg" alt="">
+                                </div>
+                                <div class="text text-center">
+                                    <h1 class="fs-4">Social Media</h1>
+                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore
+                                        et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-md-6 col-lg-4">
+                            <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card ">
+                                <div class="icon mx-auto text-center">
+                                    <img src="techno.img/asset 4.svg" alt="">
+                                </div>
+                                <div class="text text-center">
+                                    <h1 class="fs-4">SEO Optimization</h1>
+                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore
+                                        et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1200" class="col-12 col-md-6 col-lg-4 ">
+                            <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card ">
+                                <div class="icon mx-auto text-center">
+                                    <img src="techno.img/asset 5.svg" alt="">
+                                </div>
+                                <div class="text text-center">
+                                    <h1 class="fs-4">Cloud srever</h1>
+                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore
+                                        et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1600" class="col-12 col-md-6 col-lg-4 ">
+                            <div class="p-3 shadow p-3 mb-5 bg-body rounded  bg-light zoom-card ">
+                                <div class="icon mx-auto text-center">
+                                    <img src="techno.img/asset 6.svg" alt="">
+                                </div>
+                                <div class="text text-center">
+                                    <h1 class="fs-4">Data secuity</h1>
+                                    <p class="fs-6">Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore
+                                        et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1500" class="slider">
-                    <div class="slider-container ">
-                        <div class="  owl-carousel owl-theme">
-                            <div class="item shadow m-4  p-4  rounded">
-                                <div class="d-flex ">
-                                    <div class="circle ">
-                                        <div class="img">
-                                            <img class="rounded-pill" width="100%" src="techno.img/asset 23.jpeg"
-                                                alt="">
-                                        </div>
+            </div>
+        </div>
+
+
+        <div class="abc">
+            <div class="container-fluid">
+                <div class="container mx-auto">
+                    <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center">
+                        <h1 class="fs-2 ">Why Choose Us</h1>
+                        <p class="fs-6 ">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+
+                            <!-- Left Column -->
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <div data-aos="fade-up" data-aos-duration="800" class="d-flex mb-4 justify-content-end">
+                                    <div class="text text-end">
+                                        <h2 class="fs-3">Experience</h2>
+                                        <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor
+                                            incididunt ut
+                                            <br>labore et dolore magna aliqua.
+                                        </p>
                                     </div>
-                                    <div class="text">
-                                        <h4>Jhone Doe</h4>
-                                        <p>CFO</p>
-                                        <div class="star">
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        </div>
+                                    <div class="icon ms-2 zoom-card ">
+                                        <img src="techno.img/asset 7.svg" width="100%" alt="">
                                     </div>
                                 </div>
-                                <i class="fs-5">" Lorem ipsum dolor sit amet, <br> adipisicing elit. Odio
-                                    corporis<br>
-                                    itaque, quas autem simili-<br>que maxime. "</i>
-                            </div>
-                            <div class="item shadow m-4 p-4 bg-body rounded">
-                                <div class="d-flex ">
-                                    <div class="circle ">
-                                        <div class="img">
-                                            <img class="rounded-pill" width="100%" src="techno.img/asset 20.jpeg"
-                                                alt="">
-                                        </div>
+                                <div data-aos="fade-up" data-aos-duration="1200"
+                                    class="d-flex mb-4 justify-content-end">
+                                    <div class="text text-end ">
+                                        <h2 class="fs-3">Product</h2>
+                                        <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor
+                                            incididunt ut
+                                            <br>labore et dolore magna aliqua.
+                                        </p>
                                     </div>
-                                    <div class="text">
-                                        <h4>Afa Rose</h4>
-                                        <p>Web Designer</p>
-                                        <div class="star">
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        </div>
+                                    <div class="icon ms-2 zoom-card">
+                                        <img src="techno.img/asset 8.svg" width="100%" alt="">
                                     </div>
                                 </div>
-                                <i class="fs-5">" Lorem ipsum dolor sit amet, <br> adipisicing elit. Odio
-                                    corporis<br>
-                                    itaque, quas autem simili-<br>que maxime. "</i>
-                            </div>
-                            <div class="item shadow m-4 p-4 bg-body rounded">
-                                <div class="d-flex ">
-                                    <div class="circle ">
-                                        <div class="img">
-                                            <img class="rounded-pill" width="100%" src="techno.img/asset 21.jpeg"
-                                                alt="">
-                                        </div>
+                                <div data-aos="fade-up" data-aos-duration="1600"
+                                    class="d-flex mb-4 justify-content-end">
+                                    <div class="text text-end">
+                                        <h2 class="fs-3">Approach</h2>
+                                        <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor
+                                            incididunt ut
+                                            <br>labore et dolore magna aliqua.
+                                        </p>
                                     </div>
-                                    <div class="text">
-                                        <h4>Keena Lara</h4>
-                                        <p>Store Owner</p>
-                                        <div class="star">
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        </div>
+                                    <div class="icon ms-2 zoom-card">
+                                        <img src="techno.img/asset 9.svg" width="100%" alt="">
                                     </div>
                                 </div>
-                                <i class="fs-5">" Lorem ipsum dolor sit amet, <br> adipisicing elit. Odio
-                                    corporis<br>
-                                    itaque, quas autem simili-<br>que maxime. "</i>
                             </div>
-                            <div class="item shadow m-4 p-4 bg-body rounded">
-                                <div class="d-flex ">
-                                    <div class="circle ">
-                                        <div class="img">
-                                            <img class="rounded-pill" width="100%" src="techno.img/asset 22.jpeg"
-                                                alt="">
-                                        </div>
+
+                            <!-- Center Image Column -->
+                            <div data-aos="fade-up" data-aos-duration="1500" class="col-12 col-md-6 col-lg-4 mb-4 p-5">
+                                <div class="img zoom-card">
+                                    <img src="techno.img/asset_10-removebg-preview.png" alt=""
+                                        style="width: 100%; height: 350px;">
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <div data-aos="fade-up" data-aos-duration="800" class="d-flex mb-4">
+                                    <div class="icon me-2 zoom-card">
+                                        <img src="techno.img/asset 11.svg" width="100%" alt="">
                                     </div>
-                                    <div class="text">
-                                        <h4>Fizzi Brandon</h4>
-                                        <p>Freelancer</p>
-                                        <div class="star">
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        </div>
+                                    <div class="text text-start">
+                                        <h2 class="fs-3">Pricing</h2>
+                                        <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor
+                                            incididunt ut
+                                            <br>labore et dolore magna aliqua.
+                                        </p>
                                     </div>
                                 </div>
-                                <i class="fs-5">" Lorem ipsum dolor sit amet, <br> adipisicing elit. Odio
-                                    corporis<br>
-                                    itaque, quas autem simili-<br>que maxime. "</i>
+                                <div data-aos="fade-up" data-aos-duration="1200" class="d-flex mb-4">
+                                    <div class="icon me-2 zoom-card">
+                                        <img src="techno.img/asset 12.svg" width="100%" alt="">
+                                    </div>
+                                    <div class="text text-start">
+                                        <h2 class="fs-3">Delivery</h2>
+                                        <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor
+                                            incididunt ut
+                                            <br>labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="1600" class="d-flex mb-4">
+                                    <div class="icon me-2 zoom-card">
+                                        <img src="techno.img/asset 13.svg" width="100%" alt="">
+                                    </div>
+                                    <div class="text text-start">
+                                        <h2 class="fs-3">Support</h2>
+                                        <p class="fs-6">Ronsectetur adipiscing elit, sed do<br> eiusmod tempor
+                                            incididunt ut
+                                            <br>labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Portfolio" class="portfolio">
+            <div class="container-fluid">
+                <div class="container mx-auto">
+                    <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center mb-4">
+                        <h1 class="fs-2">Our Portfolio</h1>
+                        <p class="fs-6">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <!-- Filter Buttons -->
+                    <div data-aos="fade-up" data-aos-duration="1500"
+                        class="button-group mb-4 d-flex flex-wrap justify-content-center gap-2 ">
+                        <button onclick="filterProjects('all')"
+                            class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">All</button>
+                        <button onclick="filterProjects('app-design')"
+                            class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">App Design</button>
+                        <button onclick="filterProjects('app-development')"
+                            class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">App Development</button>
+                        <button onclick="filterProjects('branding')"
+                            class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">Branding</button>
+                        <button onclick="filterProjects('it')"
+                            class="btn fs-5 text-white p-2 px-4 border-0 rounded-pill">IT
+                            Solution</button>
+                    </div>
+                    <!-- Gallery -->
+                    <div data-aos="fade-up" data-aos-duration="1500" class="gallery-section">
+                        <div class="row gx-4 ">
+                            <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden"
+                                data-category="app-design">
+                                <div class="overflow-hidden">
+                                    <img class="rounded-3 w-100 zoom-card" src="techno.img/asset 14.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden"
+                                data-category="app-development">
+                                <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
+                                        src="techno.img/asset 15.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden" data-category="branding">
+                                <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
+                                        src="techno.img/asset 16.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden" data-category="it">
+                                <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
+                                        src="techno.img/asset 17.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden"
+                                data-category="app-design">
+                                <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
+                                        src="techno.img/asset 18.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4 gallery overflow-hidden" data-category="branding">
+                                <div class="overflow-hidden"> <img class="rounded-3 w-100 zoom-card"
+                                        src="techno.img/asset 19.jpeg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <div class="rate-section hero2 ">
-        <div class="container-fluid">
-            <div class="container mx-auto ">
-                <div data-aos="fade-up" data-aos-duration="1500" class="row d-md-flex justify-content-center">
-                    <div class="   col rate p-4 text-center ">
-                        <div class="icon">
-                            <img src="techno.img/asset 24.svg" class="zoom-card" alt="">
-                            <h3 class="rating">232</h3>
-                            <h3>Happy Clients</h3>
-                            <p class="text-white">consequuntur quae diredo</p>
-                        </div>
+        <div class="pricing-plan">
+            <div class="container-fluid">
+                <div class="container mx-auto">
+                    <div class="title-text text-center ">
+                        <h1 class="fs-2">Pricing Plans</h1>
+                        <p class="fs-6 ">Lorem ipsum dolor sit amet</p>
                     </div>
-                    <div class="   col rate p-4 text-center">
-                        <div class="icon">
-                            <img src="techno.img/asset 25.svg" class="zoom-card" alt="">
-                            <h3 class="rating">521</h3>
-                            <h3>Complates Projects</h3>
-                            <p class="text-white">consequuntur quae diredo</p>
+                    <div class="row gx-4">
+                        <div class="col-12 col-md-6 col-lg-4 zoom-card">
+                            <div class="p-3 shadow  bg-body rounded text-center bg-light ">
+                                <div class="price">
+                                    <h3>Basic</h3>
+                                    <div class="d-flex justify-content-center">$ <h1>25</h1>
+                                    </div>
+                                    <div class="price-list fs-6 mb-4">
+                                        <p><i class="fa-regular fa-circle-check"></i>Unlimited GB Space</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>30 Domain Names</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free SSL</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Daily Backup</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free Templates</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free Email</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>10 Databases</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Unlimited Email Address</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Live Support</p>
+                                    </div>
+                                    <div class="btn ">
+                                        <button class=" text-white p-2 px-4 border-0 rounded-pill">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="  col rate p-4 text-center">
-                        <div class="icon">
-                            <img src="techno.img/asset 26.svg" class="zoom-card" alt="">
-                            <h3 class="rating">453</h3>
-                            <h3>Hours of Supports</h3>
-                            <p class="text-white">consequuntur quae diredo</p>
+                        <div class="col-12 col-md-6 col-lg-4 zoom-card">
+                            <div class=" shadow p-3  bg-body rounded text-center bg-light ">
+                                <div class="price">
+                                    <h3>Basic</h3>
+                                    <div class="d-flex justify-content-center">$ <h1>50</h1>
+                                    </div>
+                                    <div class="price-list fs-6 mb-4">
+                                        <p><i class="fa-regular fa-circle-check"></i>Unlimited GB Space</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>30 Domain Names</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free SSL</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Daily Backup</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free Templates</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free Email</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>10 Databases</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Unlimited Email Address</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Live Support</p>
+                                    </div>
+                                    <div class="btn ">
+                                        <button class=" text-white p-2 px-4 border-0 rounded-pill">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 zoom-card">
+                            <div class=" shadow p-3 bg-body rounded text-center bg-light ">
+                                <div class="price">
+                                    <h3>Basic</h3>
+                                    <div class="d-flex justify-content-center">$ <h1>100</h1>
+                                    </div>
+                                    <div class="price-list fs-6 mb-4">
+                                        <p><i class="fa-regular fa-circle-check"></i>Unlimited GB Space</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>30 Domain Names</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free SSL</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Daily Backup</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free Templates</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Free Email</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>10 Databases</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Unlimited Email Address</p>
+                                        <p><i class="fa-regular fa-circle-check"></i>Live Support</p>
+                                    </div>
+                                    <div class="btn ">
+                                        <button class=" text-white p-2 px-4 border-0 rounded-pill">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
 
-
-    <div class="other-company">
-        <div class="container-fluid">
-            <div class="container mx-auto">
-                <div data-aos="zoom-in" data-aos-duration="1500" class="row">
-                    <div class="col">
-                        <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 27.png"
-                            width="60%" alt="">
+        <div id="Testimonials" class="testimonials">
+            <div class="container-fluid">
+                <div class="container mx-auto">
+                    <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center mb-4">
+                        <h1 class="fs-2">Testimonials</h1>
+                        <p class="fs-6">Lorem ipsum dolor sit amet</p>
                     </div>
-                    <div class="col">
-                        <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 28.png"
-                            width="60%" alt="">
-                    </div>
-                    <div class="col">
-                        <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 29.png"
-                            width="60%" alt="">
-                    </div>
-                    <div class="col">
-                        <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 30.png"
-                            width="60%" alt="">
-                    </div>
-                    <div class="col">
-                        <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 31.png"
-                            width="60%" alt="">
+                    <div data-aos="fade-up" data-aos-duration="1500" class="slider">
+                        <div class="slider-container ">
+                            <div class="  owl-carousel owl-theme">
+                                <div class="item shadow m-4  p-4  rounded">
+                                    <div class="d-flex ">
+                                        <div class="circle ">
+                                            <div class="img">
+                                                <img class="rounded-pill" width="100%" src="techno.img/asset 23.jpeg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h4>Jhone Doe</h4>
+                                            <p>CFO</p>
+                                            <div class="star">
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fs-5">" Lorem ipsum dolor sit amet, <br> adipisicing elit. Odio
+                                        corporis<br>
+                                        itaque, quas autem simili-<br>que maxime. "</i>
+                                </div>
+                                <div class="item shadow m-4 p-4 bg-body rounded">
+                                    <div class="d-flex ">
+                                        <div class="circle ">
+                                            <div class="img">
+                                                <img class="rounded-pill" width="100%" src="techno.img/asset 20.jpeg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h4>Afa Rose</h4>
+                                            <p>Web Designer</p>
+                                            <div class="star">
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fs-5">" Lorem ipsum dolor sit amet, <br> adipisicing elit. Odio
+                                        corporis<br>
+                                        itaque, quas autem simili-<br>que maxime. "</i>
+                                </div>
+                                <div class="item shadow m-4 p-4 bg-body rounded">
+                                    <div class="d-flex ">
+                                        <div class="circle ">
+                                            <div class="img">
+                                                <img class="rounded-pill" width="100%" src="techno.img/asset 21.jpeg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h4>Keena Lara</h4>
+                                            <p>Store Owner</p>
+                                            <div class="star">
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fs-5">" Lorem ipsum dolor sit amet, <br> adipisicing elit. Odio
+                                        corporis<br>
+                                        itaque, quas autem simili-<br>que maxime. "</i>
+                                </div>
+                                <div class="item shadow m-4 p-4 bg-body rounded">
+                                    <div class="d-flex ">
+                                        <div class="circle ">
+                                            <div class="img">
+                                                <img class="rounded-pill" width="100%" src="techno.img/asset 22.jpeg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h4>Fizzi Brandon</h4>
+                                            <p>Freelancer</p>
+                                            <div class="star">
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fs-5">" Lorem ipsum dolor sit amet, <br> adipisicing elit. Odio
+                                        corporis<br>
+                                        itaque, quas autem simili-<br>que maxime. "</i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-   <!-- <div id="team" class="team">
+
+        <div class="rate-section hero2 ">
+            <div class="container-fluid">
+                <div class="container mx-auto ">
+                    <div data-aos="fade-up" data-aos-duration="1500" class="row d-md-flex justify-content-center">
+                        <div class="   col rate p-4 text-center ">
+                            <div class="icon">
+                                <img src="techno.img/asset 24.svg" class="zoom-card" alt="">
+                                <h3 class="rating">232</h3>
+                                <h3>Happy Clients</h3>
+                                <p class="text-white">consequuntur quae diredo</p>
+                            </div>
+                        </div>
+                        <div class="   col rate p-4 text-center">
+                            <div class="icon">
+                                <img src="techno.img/asset 25.svg" class="zoom-card" alt="">
+                                <h3 class="rating">521</h3>
+                                <h3>Complates Projects</h3>
+                                <p class="text-white">consequuntur quae diredo</p>
+                            </div>
+                        </div>
+                        <div class="  col rate p-4 text-center">
+                            <div class="icon">
+                                <img src="techno.img/asset 26.svg" class="zoom-card" alt="">
+                                <h3 class="rating">453</h3>
+                                <h3>Hours of Supports</h3>
+                                <p class="text-white">consequuntur quae diredo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="other-company">
+            <div class="container-fluid">
+                <div class="container mx-auto">
+                    <div data-aos="zoom-in" data-aos-duration="1500" class="row">
+                        <div class="col">
+                            <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 27.png"
+                                width="60%" alt="">
+                        </div>
+                        <div class="col">
+                            <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 28.png"
+                                width="60%" alt="">
+                        </div>
+                        <div class="col">
+                            <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 29.png"
+                                width="60%" alt="">
+                        </div>
+                        <div class="col">
+                            <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 30.png"
+                                width="60%" alt="">
+                        </div>
+                        <div class="col">
+                            <img style="filter: grayscale(100); border-radius: 10px;" src="techno.img/asset 31.png"
+                                width="60%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="team" class="team">
         <div class="container-fluid">
             <div class="container mx-auto">
                 <div class="title-text text-center mb-4">
@@ -729,316 +751,341 @@
                 </div>
             </div>
         </div>
-    </div> -->
+     </div> -->
 
 
-    <div class="faq">
-        <div class="container-fluid">
-            <div class="container mx-auto">
-                <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center mb-4">
-                    <h1 class="fs-2">FAQ's</h1>
-                    <p class="fs-6">Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="accordion">
-                    <div data-aos="fade-up" data-aos-duration="1500" class="accordion"
-                        id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item mb-4" style="border-radius: 10px; overflow: hidden;">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button text-primary bg-light" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                    <i class="me-2 fa-solid fa-circle-arrow-right" style="color: #0764de;"></i>
-                                    What is web domain and hosting ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body">
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                                    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                                    vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                    consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-4 " style="border-radius: 10px; overflow: hidden;">
-                            <h2 class="accordion-header " id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button collapsed  bg-light text-primary " type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    <i class="me-2 fa-solid fa-circle-arrow-right" style="color: #0764de;"></i>
-                                    Which server is best for websites linux or windows ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="accordion-body">
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                                    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                                    vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                    consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-4" style="border-radius: 10px; overflow: hidden;">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed bg-light text-primary " type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                    <i class="me-2 fa-solid fa-circle-arrow-right" style="color: #0764de;"></i>
-                                    Google clouds or Amazon server which one is best and fast ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="accordion-body">
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                                    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                                    vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                    consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-4" style="border-radius: 10px; overflow: hidden;">
-                            <h2 class="accordion-header " id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed bg-light text-primary " type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                    <i class="me-2 fa-solid fa-circle-arrow-right" style="color: #0764de;"></i>
-                                    Why Organic SEO is important for all business ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="accordion-body">
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                                    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                                    vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                                    consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact-1 hero2 ">
-        <div class="container-fluid">
-            <div class="container mx-auto ">
-                <div class="row text text-center text-white">
-                    <div class="col">
-                        <h2 class="mb-4">Let's Discuss your Projects</h2>
-                        <p class="mb-4">We pride ourselves with our ability to perform and deliver results. Use the form
-                            below to discuss your project needs with our team, we will<br> get back asap</p>
-                        <div class="btn">
-                            <button class=" text-white p-2 px-4 border-0 rounded-pill">Contact Us</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="Blogs" class="blog">
-        <div class="container-fluid">
-            <div class="container mx-auto">
-                <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center mb-4">
-                    <h1 class="fs-2">Blogs</h1>
-                    <p class="fs-6">Lorem ipsum dolor sit amet</p>
-                </div>
-
-                <div data-aos="fade-up" data-aos-duration="1500" class="blog-card row">
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="card" style="width: 33.33rem;">
-                            <div class="overflow-hidden">
-                                <img src="techno.img/asset 39.jpeg" class="card-img-top zoom-card"
-                                    alt="Domain & Hosting">
-                            </div>
-                            <div class="card-body">
-                                <p>Domain & Hosting</p>
-                                <h4 class="card-title fs-4 mb-3">How to host website on any hosting provider?</h4>
-                                <h5 class="text">Willian Bla</h5>
-                                <p class="text">Feb 1,2026</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="card" style="width: 33.33rem;">
-                            <div class="overflow-hidden">
-                                <img src="techno.img/asset 40.jpeg" class="card-img-top zoom-card" alt="Advertisement">
-                            </div>
-                            <div class="card-body">
-                                <p>Advertisement</p>
-                                <h4 class="card-title fs-4 mb-3">How to create add on google adwords?</h4>
-                                <h5 class="text">Jobi Ret</h5>
-                                <p class="text">Oct 5,2026</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center ">
-                        <div class="card" style="width: 33.33rem;">
-                            <div class="overflow-hidden">
-                                <img src="techno.img/asset 41.jpeg" class="card-img-top zoom-card" alt="marketing">
-                            </div>
-                            <div class="card-body">
-                                <p>Marketing</p>
-                                <h4 class="card-title fs-4 mb-3">What is digital marketing and why is important?</h4>
-                                <h5 class="text">Main Dow</h5>
-                                <p class="text">Dec 22,2026</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="Contact" class="contact">
-        <div class="container-fluid">
-            <div class="container mx-auto">
-                <div class="title-text text-center mb-4">
-                    <h1 class="fs-2">Contact Us</h1>
-                    <p class="fs-6">Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="row d-flex flex-md-row flex-column justify-content-between overflow-hidden">
-                    <div  data-aos="fade-right" data-aos-duration="1500" class="col-12 text text-dark">
-                        <div class="address mb-4">
-                            <h5 class="text-dark">Address :</h5>
-                            <p class="m-0 text-dark">11 West Town</p>
-                            <p class="m-0 text-dark">PBo 12345, United States</p>
-                        </div>
-                        <div class="phone mb-4 ">
-                            <h5 class="text-dark">Phone :</h5>
-                            <p class="m-0 text-dark">+1 1234 56 789</p>
-                            <p class="m-0 text-dark">+1 1234 56 789</p>
-                        </div>
-                        <div class="email mb-4">
-                            <h5 class="text-dark">Email :</h5>
-                            <p class="m-0 text-dark">info@example.com</p>
-                            <p class="m-0 text-dark">email@example.com</p>
-                        </div>
-                    </div>
-                    <form class="col-12" data-aos="fade-left" data-aos-duration="1500">
-                        <div data-aos="fade-left" data-aos-duration="1500" class="row g-3">
-                            <!-- Name -->
-                            <div class="col-md-6">
-                                <input type="text" class="form-control p-3 bg-light border-0" placeholder="Name*"
-                                    required>
-                            </div>
-                            <!-- Email -->
-                            <div class="col-md-6">
-                                <input type="email" class="form-control p-3 bg-light border-0" placeholder="Email*"
-                                    required>
-                            </div>
-                            <!-- Subject -->
-                            <div class="col-12">
-                                <input type="text" class="form-control p-3 bg-light border-0" placeholder="Subject">
-                            </div>
-                            <!-- Message -->
-                            <div class="col-12">
-                                <textarea class="form-control p-3 bg-light border-0" rows="6"
-                                    placeholder="Write Your Message*" required></textarea>
-                            </div>
-                            <!-- Button -->
-                            <div class="col-12">
-                                <div class="btn m- p-0">
-                                    <button class=" text-white p-2 px-4 border-0 rounded-pill">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer hero3">
+        <div class="faq">
             <div class="container-fluid">
                 <div class="container mx-auto">
-                    <div class="row ">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="logo-img mb-4 zoom-card">
-                                <img src="techno.img/logo.png" width="100%" alt="">
-                            </div>
-                            <p class="text-white">Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do
-                                eiusmod tempor incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.
-                            </p>
-                            <h5 class="link text-decoration-none mb-3">Follow us</h5>
-                            <div class="social-icon">
-                                <i class="me-2 fa-brands fa-x-twitter" style="color: #ffffff;"></i>
-                                <i class="m-2 fa-brands fa-facebook" style="color: #ffffff;"></i>
-                                <i class="m-2 fa-brands fa-instagram" style="color: #ffffff;"></i>
-                                <i class="m-2 fa-brands fa-linkedin" style="color: #ffffff;"></i>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 footer-text">
-                            <h4 class="title-text mb-3">Services</h4>
-                            <p>Web Design</p>
-                            <p>App Developemnt</p>
-                            <p>Cloud Services</p>
-                            <p>Domain adn Hosting</p>
-                            <p>Seo Optimization</p>
-                            <p>Social Media</p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 footer-text">
-                            <h4 class="title-text mb-3">Services</h4>
-                            <p>About</p>
-                            <p>Pricing</p>
-                            <p>Team</p>
-                            <p>Portfolio</p>
-                            <p>FAQs</p>
-                            <p>Team</p>
-                            <p>Blogs</p>
-                            <p>Blog Details</p>
-                            <p>Coming soon</p>
-                            <p>Terms & Conditions</p>
-                            <p>Privacy Policy</p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 last-col">
-                            <h4 class="title-text mb-3">Contacts</h4>
-                            <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>101 West Town , PBO
-                                12345, United States</p>
-                            <p><i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i> +1 1234 56 789</p>
-                            <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> contact@example.com</p>
-                            <h4 class="title-text mb-3">Newsletter</h4>
-                            <p>Don't miss to subscribe to our new feeds, kindly fill the form below.
-                            </p>
-                            <div class="input position-relative">
-                                <div class="d-flex bg-light rounded-pill align-items-center ">
-                                    <input type="email"
-                                        class="form-control border-0 bg-light rounded-pill shadow-none ms-2"
-                                        placeholder="Email Address">
-                                    <button class="btn rounded-circle p-2">
-                                        <i class="fa-brands fa-telegram" style="color: #0764de;"></i>
+                    <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center mb-4">
+                        <h1 class="fs-2">FAQ's</h1>
+                        <p class="fs-6">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="accordion">
+                        <div data-aos="fade-up" data-aos-duration="1500" class="accordion"
+                            id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item mb-4" style="border-radius: 10px; overflow: hidden;">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button text-primary bg-light" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                        aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        <i class="me-2 fa-solid fa-circle-arrow-right" style="color: #0764de;"></i>
+                                        What is web domain and hosting ?
                                     </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                        quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro
+                                        quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                        velit,
+                                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                        aliquam
+                                        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                                        autem
+                                        vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                                        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 " style="border-radius: 10px; overflow: hidden;">
+                                <h2 class="accordion-header " id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed  bg-light text-primary " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                        aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        <i class="me-2 fa-solid fa-circle-arrow-right" style="color: #0764de;"></i>
+                                        Which server is best for websites linux or windows ?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                        quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro
+                                        quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                        velit,
+                                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                        aliquam
+                                        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                                        autem
+                                        vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                                        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4" style="border-radius: 10px; overflow: hidden;">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed bg-light text-primary " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                        aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        <i class="me-2 fa-solid fa-circle-arrow-right" style="color: #0764de;"></i>
+                                        Google clouds or Amazon server which one is best and fast ?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                        quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro
+                                        quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                        velit,
+                                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                        aliquam
+                                        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                                        autem
+                                        vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                                        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4" style="border-radius: 10px; overflow: hidden;">
+                                <h2 class="accordion-header " id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed bg-light text-primary " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                        aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        <i class="me-2 fa-solid fa-circle-arrow-right" style="color: #0764de;"></i>
+                                        Why Organic SEO is important for all business ?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                        quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro
+                                        quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                        velit,
+                                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                        aliquam
+                                        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                                        autem
+                                        vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                                        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="text-white">Technoit © 2023 - Designed by <span>Zr Themes</span></p>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <div class="contact-1 hero2 ">
+            <div class="container-fluid">
+                <div class="container mx-auto ">
+                    <div class="row text text-center text-white">
+                        <div class="col">
+                            <h2 class="mb-4">Let's Discuss your Projects</h2>
+                            <p class="mb-4">We pride ourselves with our ability to perform and deliver results. Use the
+                                form
+                                below to discuss your project needs with our team, we will<br> get back asap</p>
+                            <div class="btn">
+                                <button class=" text-white p-2 px-4 border-0 rounded-pill">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Blogs" class="blog">
+            <div class="container-fluid">
+                <div class="container mx-auto">
+                    <div data-aos="fade-up" data-aos-duration="1500" class="title-text text-center mb-4">
+                        <h1 class="fs-2">Blogs</h1>
+                        <p class="fs-6">Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="1500" class="blog-card row">
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 33.33rem;">
+                                <div class="overflow-hidden">
+                                    <img src="techno.img/asset 39.jpeg" class="card-img-top zoom-card"
+                                        alt="Domain & Hosting">
+                                </div>
+                                <div class="card-body">
+                                    <p>Domain & Hosting</p>
+                                    <h4 class="card-title fs-4 mb-3">How to host website on any hosting provider?</h4>
+                                    <h5 class="text">Willian Bla</h5>
+                                    <p class="text">Feb 1,2026</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 33.33rem;">
+                                <div class="overflow-hidden">
+                                    <img src="techno.img/asset 40.jpeg" class="card-img-top zoom-card"
+                                        alt="Advertisement">
+                                </div>
+                                <div class="card-body">
+                                    <p>Advertisement</p>
+                                    <h4 class="card-title fs-4 mb-3">How to create add on google adwords?</h4>
+                                    <h5 class="text">Jobi Ret</h5>
+                                    <p class="text">Oct 5,2026</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center ">
+                            <div class="card" style="width: 33.33rem;">
+                                <div class="overflow-hidden">
+                                    <img src="techno.img/asset 41.jpeg" class="card-img-top zoom-card" alt="marketing">
+                                </div>
+                                <div class="card-body">
+                                    <p>Marketing</p>
+                                    <h4 class="card-title fs-4 mb-3">What is digital marketing and why is important?
+                                    </h4>
+                                    <h5 class="text">Main Dow</h5>
+                                    <p class="text">Dec 22,2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contact" class="contact">
+            <div class="container-fluid">
+                <div class="container mx-auto">
+                    <div class="title-text text-center mb-4">
+                        <h1 class="fs-2">Contact Us</h1>
+                        <p class="fs-6">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="row d-flex flex-md-row flex-column justify-content-between overflow-hidden">
+                        <div data-aos="fade-right" data-aos-duration="1500" class="col-12 text text-dark">
+                            <div class="address mb-4">
+                                <h5 class="text-dark">Address :</h5>
+                                <p class="m-0 text-dark">11 West Town</p>
+                                <p class="m-0 text-dark">PBo 12345, United States</p>
+                            </div>
+                            <div class="phone mb-4 ">
+                                <h5 class="text-dark">Phone :</h5>
+                                <p class="m-0 text-dark">+1 1234 56 789</p>
+                                <p class="m-0 text-dark">+1 1234 56 789</p>
+                            </div>
+                            <div class="email mb-4">
+                                <h5 class="text-dark">Email :</h5>
+                                <p class="m-0 text-dark">info@example.com</p>
+                                <p class="m-0 text-dark">email@example.com</p>
+                            </div>
+                        </div>
+                        <form class="col-12" data-aos="fade-left" data-aos-duration="1500">
+                            <div data-aos="fade-left" data-aos-duration="1500" class="row g-3">
+                                <!-- Name -->
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control p-3 bg-light border-0" placeholder="Name*"
+                                        required>
+                                </div>
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control p-3 bg-light border-0" placeholder="Email*"
+                                        required>
+                                </div>
+                                <!-- Subject -->
+                                <div class="col-12">
+                                    <input type="text" class="form-control p-3 bg-light border-0" placeholder="Subject">
+                                </div>
+                                <!-- Message -->
+                                <div class="col-12">
+                                    <textarea class="form-control p-3 bg-light border-0" rows="6"
+                                        placeholder="Write Your Message*" required></textarea>
+                                </div>
+                                <!-- Button -->
+                                <div class="col-12">
+                                    <div class="btn m- p-0">
+                                        <button class=" text-white p-2 px-4 border-0 rounded-pill">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer hero3">
+                <div class="container-fluid">
+                    <div class="container mx-auto">
+                        <div class="row ">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="logo-img mb-4 zoom-card">
+                                    <img src="techno.img/logo.png" width="100%" alt="">
+                                </div>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do
+                                    eiusmod tempor incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit
+                                    amet.
+                                </p>
+                                <h5 class="link text-decoration-none mb-3">Follow us</h5>
+                                <div class="social-icon">
+                                    <i class="me-2 fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+                                    <i class="m-2 fa-brands fa-facebook" style="color: #ffffff;"></i>
+                                    <i class="m-2 fa-brands fa-instagram" style="color: #ffffff;"></i>
+                                    <i class="m-2 fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 footer-text">
+                                <h4 class="title-text mb-3">Services</h4>
+                                <p>Web Design</p>
+                                <p>App Developemnt</p>
+                                <p>Cloud Services</p>
+                                <p>Domain adn Hosting</p>
+                                <p>Seo Optimization</p>
+                                <p>Social Media</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 footer-text">
+                                <h4 class="title-text mb-3">Services</h4>
+                                <p>About</p>
+                                <p>Pricing</p>
+                                <p>Team</p>
+                                <p>Portfolio</p>
+                                <p>FAQs</p>
+                                <p>Team</p>
+                                <p>Blogs</p>
+                                <p>Blog Details</p>
+                                <p>Coming soon</p>
+                                <p>Terms & Conditions</p>
+                                <p>Privacy Policy</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 last-col">
+                                <h4 class="title-text mb-3">Contacts</h4>
+                                <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>101 West Town , PBO
+                                    12345, United States</p>
+                                <p><i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i> +1 1234 56 789</p>
+                                <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> contact@example.com</p>
+                                <h4 class="title-text mb-3">Newsletter</h4>
+                                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.
+                                </p>
+                                <div class="input position-relative">
+                                    <div class="d-flex bg-light rounded-pill align-items-center ">
+                                        <input type="email"
+                                            class="form-control border-0 bg-light rounded-pill shadow-none ms-2"
+                                            placeholder="Email Address">
+                                        <button class="btn rounded-circle p-2">
+                                            <i class="fa-brands fa-telegram" style="color: #0764de;"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-white">Technoit © 2023 - Designed by <span>Zr Themes</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 </body>
 
@@ -1063,6 +1110,24 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+
+<script>
+    let count = 0;
+    let counterEl = document.getElementById('counter');
+    let loader = document.getElementById('loader');
+    let content = document.getElementById('content');
+
+    let interval = setInterval(() => {
+        if (count < 100) {
+            count++;
+            counterEl.textContent = count + "%";
+        } else {
+            clearInterval(interval);
+            loader.style.display = "none";
+            content.style.display = "block";
+        }
+    }, 15); // speed adjust karne ke liye number badlao
 </script>
 
 </html>

@@ -81,10 +81,12 @@
  .header .d-flex .nav ul li .text-white:hover {
      color: #0764DE !important;
  }
-  .bg-light .header .nav ul li a:hover {
+
+ .bg-light .header .nav ul li a:hover {
      color: #0764DE !important;
  }
-   .bg-light .header .bg-light ul li a:hover {
+
+ .bg-light .header .bg-light ul li a:hover {
      color: #0764DE !important;
  }
 
@@ -240,7 +242,7 @@
      background-color: #0857be;
  }
 
- 
+
 
  .pricing-plan {
      padding: 60px 0px;
@@ -582,4 +584,30 @@
 
  .blog .blog-card .col-12 .card .card-body .white:hover {
      color: white;
+ }
+
+ /* loader page  */
+ #loader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     /* background: #111; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     z-index: 9999;
+ }
+
+ #counter {
+     font-size: 4rem;
+     font-weight: bold;
+     color: #0764de;
+ }
+
+ /* Main content */
+ #content {
+     display: none;
  }

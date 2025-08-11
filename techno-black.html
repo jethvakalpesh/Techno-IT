@@ -21,9 +21,15 @@
     <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+   
+
 </head>
 
 <body style="background-color: black;">
+     <div id="loader">
+        <div id="counter">0%</div>
+    </div>
+    <div id="content">
 
     <header class="shadowz static-header w-100 top-0" style="background-color: #000000;">
         <div class="container-fluid">
@@ -41,7 +47,6 @@
                                 <li><a class="text-white" href="#Services">Services</a></li>
                                 <li><a class="text-white" href="#Portfolio">Portfolio</a></li>
                                 <li><a class="text-white" href="#Testimonials">Testimonials</a></li>
-                                <li><a class="text-white" href="#team">Team</a></li>
                                 <li><a class="text-white" href="#Blogs">Blogs</a></li>
                                 <li><a class="text-white" href="#Contact">Contact</a></li>
                             </ul>
@@ -67,7 +72,6 @@
                                 <li class="pb-2 m-2"><a href="#Services">Services</a></li>
                                 <li class="pb-2 m-2"><a href="#Portfolio">Portfolio</a></li>
                                 <li class="pb-2 m-2"><a href="Testimonials">Testimonials</a></li>
-                                <li class="pb-2 m-2"><a href="#team">Team</a></li>
                                 <li class="pb-2 m-2"><a href="#Blogs">Blogs</a></li>
                                 <li class="pb-2 m-2"><a href="#Contacts">Contacts</a></li>
                             </ul>
@@ -939,7 +943,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div id="Contact" class="contact">
         <div class="container-fluid">
@@ -1070,6 +1074,7 @@
             </div>
         </div>
     </footer>
+      </div>
 
 </body>
 
@@ -1096,6 +1101,24 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+
+<script>
+    let count = 0;
+    let counterEl = document.getElementById('counter');
+    let loader = document.getElementById('loader');
+    let content = document.getElementById('content');
+
+    let interval = setInterval(() => {
+        if (count < 100) {
+            count++;
+            counterEl.textContent = count + "%";
+        } else {
+            clearInterval(interval);
+            loader.style.display = "none";
+            content.style.display = "block";
+        }
+    }, 15); // speed adjust karne ke liye number badlao
 </script>
 
 
