@@ -499,6 +499,9 @@
  .form-control::placeholder {
      color: white !important;
  }
+  form .bg-light::placeholder {
+     color: gray!important;
+ }
 
  .footer {
      padding: 60px 0px;
