@@ -1,10 +1,10 @@
 
 
-const btn = document.getElementById('menu-btn');
-const menu = document.getElementById('mobile-menu');
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
 
-btn.addEventListener('click', () => {
-    menu.classList.toggle('d-none');  // toggle show/hide
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('d-none');  // toggle show/hide
 });
 
 
